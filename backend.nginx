@@ -3,12 +3,12 @@
 #sudo chown -R ubuntu:ubuntu /var/www #Donde ubuntu es el nombre de usuario del sistema
 
 #para enlace simbolico
-# sudo ln -s /etc/nginx/sites-available/archivo /etc/nginx/sites-enabled/archivo
+# sudo ln -s /etc/nginx/sites-available/backend.nginx /etc/nginx/sites-enabled/backend.nginx
 
 server {
     listen 80;
 	listen [::]:80;
-    server_name backend2.gustavogutierrez.me;
+    server_name backfull.allisonrivas.me;
     location / {
         proxy_pass http://localhost:3000;
         proxy_http_version 1.1;
